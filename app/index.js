@@ -16,7 +16,7 @@ console.log(`The result is: ${result}`)
 console.log(lodashvar1);
 
 
-/* synchronous */
+/* synchronous
 const fs = require('fs')
 var content
 
@@ -28,12 +28,18 @@ try {
 
 console.log(content)
 
-/*
-const numbers = [2,4,1,5,4]
-
-function isBiggerThanTwo(num) {
-  return num > 2
-}
-
-numbers.filter(isBiggerThanTwo)
 */
+
+const fs = require('fs')
+console.log('start reading a file...')
+
+fs.readFile('file.md', 'utf-8', function(err, content){
+  if(err) {
+    console.log('error happened during reading the file')
+    return console.log(err);
+  }
+
+  console.log(content)
+})
+
+console.log('end of the file')
