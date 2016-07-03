@@ -1,0 +1,22 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "The is my first app in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "javier Lopez <sjavierlopez@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts":{
+    "start": "node index.js",
+    "test": "mocha test",
+    "your-custom-script": "echo npm"
+  }
+}
